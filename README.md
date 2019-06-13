@@ -4,9 +4,10 @@ This is our Engineering blog, built using Jekyll + GitHub pages, currently using
 
 # Setup
 
-1. Install [asdf](https://github.com/asdf-vm/asdf) or otherwise control your Ruby version to be appropriate (see the `.tool-versions` file for exact version).
-1. Install Jekyll and Bundler gems: `gem install jekyll bundle`
+1. Follow [jekyll-installation](https://jekyllrb.com/docs/installation/) to ensure you have Ruby, Jekyll and Bundler.
 1. Run `bundle install`
+
+The repository contains a `.tool-versions` file, so you can also manage your Ruby version via e.g., [asdf](https://github.com/asdf-vm/asdf) or similar.
 
 # Run the site locally
 
