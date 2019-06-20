@@ -12,7 +12,11 @@ layout: default
       </time>
       {%- assign author = site.authors | where: 'short_name', page.author | first -%}
       {%- if author -%}
-      • <a href="https://github.com/{{ author.github }}"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author.name }}</span></span></a>
+      • 
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author.name }}</span></span>
+      &nbsp;
+      {%- if author.github -%}<a href="https://github.com/{{ author.github | cgi_escape | escape }}" title="{{ author.github | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
+      {%- if author.twitter -%}<a href="https://twitter.com/{{ author.twitter | cgi_escape | escape }}" title="{{ author.twitter | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a>{%- endif -%}
       {%- endif -%}</p>
   </header>
 
