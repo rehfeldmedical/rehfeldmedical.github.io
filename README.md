@@ -1,4 +1,4 @@
-# Rehfeld Medical Engineering blog
+# Vital Beats Engineering blog
 
 This is our Engineering blog, built using Jekyll + GitHub pages, currently using the 'Minima' theme as a gem-based theme.
 
